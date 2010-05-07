@@ -1,0 +1,32 @@
+html {
+  margin: 1in;
+}
+
+body {
+  font-family: "Gentium Book Basic", Gentium, serif;
+  width: 80ex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h1 {
+  font-size: 3em;
+  clear: both;
+}
+
+div {
+  margin-top: 1in;
+}
+
+div p:nth-child(2):first-letter {
+  font-size: 4em;
+  font-weight: bold;
+  float: left;
+  margin: 0;
+  padding: 0;
+  margin-right: 0.5ex;
+}
+
+div :last-child {
+  page-break-after: always;
+}

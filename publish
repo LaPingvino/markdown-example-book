@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+#  Usage: ./publish chapterfile
+#
+########################################################
+
+TEMPFILE=`tempfile`
+EMPTY=`tempfile`
+touch $EMPTY
+
+function c {
+  cat startc >> $TEMPFILE
+  markdown $1 >> $TEMPFILE
+  cat stopc >> $TEMPFILE
+}
+
+touch $TEMPFILE
+
+for chapter in `cat $1`; do
+  c $chapter
+done
+
+cat stop >> $TEMPFILE
+
+cat start $TEMPFILE
