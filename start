@@ -4,3 +4,7 @@
 <link rel="stylesheet" type="text/css" href="book.css" />
 </head>
 <body>
+<div class="frontpage">
+<h1>Example book</h1>
+<h2>To show how you can create books with Markdown</h2>
+</div>

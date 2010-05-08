@@ -4,7 +4,7 @@ html {
 
 body {
   font-family: "Gentium Book Basic", Gentium, serif;
-  width: 80ex;
+  max-width: 80ex;
   margin-left: auto;
   margin-right: auto;
 }
@@ -16,6 +16,13 @@ h1 {
 
 div {
   margin-top: 1in;
+}
+
+div.chapter:after {
+  content: url('line.png');
+  text-align: center;
+  display: block;
+  color: red;
 }
 
 div p:nth-child(2):first-letter {
